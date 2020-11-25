@@ -30,6 +30,8 @@ import static org.junit.Assert.assertEquals;
  * Instrumented test, which will execute on an Android device.
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ *
+ * adb shell am instrument -w -r -e phone 12345000000 -e debug false -e class 'android.example.xinxi.monkeytest.ExampleInstrumentedTestLoginIgetcool' android.example.autodismiss.test/android.support.test.runner.AndroidJUnitRunner
  */
 @RunWith(AndroidJUnit4.class)
 public class ExampleInstrumentedTestIgetcool {

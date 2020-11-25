@@ -9,7 +9,7 @@
 gradle assembleAndroidTest
 
 在/app/build/outputs/apk/androidTest/debug生成
-
+aut
 adb install app-debug-androidTest.apk
 ```
 
