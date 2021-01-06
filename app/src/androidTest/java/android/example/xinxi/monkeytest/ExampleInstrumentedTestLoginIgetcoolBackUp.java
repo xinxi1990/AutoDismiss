@@ -26,9 +26,11 @@ import java.util.Arrays;
  * Instrumented test, which will execute on an Android device.
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ * adb shell am instrument -w -r -e phone 12345000000 -e debug false -e class 'android.example.xinxi.monkeytest.ExampleInstrumentedTestLoginIgetcool' android.example.autodismiss.test/android.support.test.runner.AndroidJUnitRunner
+
  */
 @RunWith(AndroidJUnit4.class)
-public class ExampleInstrumentedTestLoginIgetcool {
+public class ExampleInstrumentedTestLoginIgetcoolBackUp {
 
     String TAG = "ExampleInstrumentedTestLoginIgetcool";
     //private String mPackageName="android.example.autodismiss";
@@ -39,8 +41,8 @@ public class ExampleInstrumentedTestLoginIgetcool {
     private String notificationBtn = "com.dedao.juvenile:id/notificationBtn";
     private String etMobile = "com.dedao.juvenile:id/etMobile";
     private String sendSmsBtn = "com.dedao.juvenile:id/btnSend";
-    private String phone;
-    //private String phone = "12300000001";
+    //private String phone;
+    private String phone = "12300000001";
     public UiDevice mDevice;
     public boolean Flag = true;
     public int MaxRetryCout = 30;
